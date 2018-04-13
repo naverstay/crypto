@@ -27,7 +27,7 @@
   overflow: hidden;
 
   &:before {
-    content: $icon-ufo;
+    content: unicode($icon-ufo);
     position: absolute;
     pointer-events: none;
     color: #000;
@@ -192,7 +192,7 @@
   color: #fff;
 
   &:before {
-    content: $icon-search;
+    content: unicode($icon-search);
   }
 
   .search_input:focus + & {
@@ -300,7 +300,7 @@
   display: none;
 
   &:before {
-    content: $icon-close;
+    content: unicode($icon-close);
     color: $violette;
     font-size: 22px;
     line-height: 1;
@@ -439,31 +439,31 @@
 
   &._w {
     &:before {
-      content: $icon-tw;
+      content: unicode($icon-tw);
     }
   }
 
   &._t {
     &:before {
-      content: $icon-tg;
+      content: unicode($icon-tg);
     }
   }
 
   &._f {
     &:before {
-      content: $icon-fb;
+      content: unicode($icon-fb);
     }
   }
 
   &._r {
     &:before {
-      content: $icon-rss;
+      content: unicode($icon-rss);
     }
   }
 
   &._y {
     &:before {
-      content: $icon-youtube;
+      content: unicode($icon-youtube);
     }
   }
 }

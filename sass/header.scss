@@ -161,7 +161,7 @@
     @extend %icon_pseudo;
 
     &:before {
-      content: $icon-search;
+      content: unicode($icon-search);
     }
   }
 

@@ -121,7 +121,7 @@
     @extend %icon_pseudo;
 
     &:before {
-      content: $icon-arrow-up;
+      content: unicode($icon-arrow-up);
     }
   }
 

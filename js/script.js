@@ -203,6 +203,7 @@ $(function ($) {
 
     initFollowPopup();
 
+    initBonusPopup();
 });
 
 $(window)
@@ -253,7 +254,7 @@ function plural(n, str1, str2, str5) {
 function initFollowPopup() {
 
     $followPopup = $('#follow_popup').dialog({
-        autoOpen: true,
+        autoOpen: false,
         modal: true,
         closeOnEscape: true,
         closeText: '',
@@ -267,6 +268,28 @@ function initFollowPopup() {
             $body.addClass('modal_opened overlay_v2');
 
             startFollowCountDown();
+        },
+        close: function (event, ui) {
+            $body.removeClass('modal_opened overlay_v2');
+        }
+    });
+}
+
+function initBonusPopup() {
+
+    $followPopup = $('#bonus_popup').dialog({
+        autoOpen: true,
+        modal: true,
+        closeOnEscape: true,
+        closeText: '',
+        dialogClass: 'dialog_v2 dialog_title_v1',
+        //appendTo: '.wrapper',
+        width: 320,
+        draggable: true,
+        collision: "fit",
+        position: {my: "top center", at: "top center", of: window},
+        open: function (event, ui) {
+            $body.addClass('modal_opened overlay_v2');
         },
         close: function (event, ui) {
             $body.removeClass('modal_opened overlay_v2');

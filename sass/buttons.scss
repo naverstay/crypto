@@ -12,7 +12,7 @@
     padding: 15px;
 
     &:before {
-      content: $icon-triangle;
+      content: unicode($icon-triangle);
       margin: 0 12px 0 -12px;
       font-size: 9px;
     }
@@ -91,6 +91,37 @@
 
 .btn_v4 {
   height: 40px;
+
+  &.subscribe_btn {
+    @extend %icon_pseudo;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 22px;
+    font: 15px/20px $RubikReg;
+    color: #fff;
+    border-radius: 5px;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:after {
+      content: unicode($icon-tw);
+      font-size: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 15px;
+    }
+
+    &._tw {
+      background: #1da1f2;
+
+      &:hover {
+        background: #23c1ff;
+      }
+    }
+  }
 
   &.create_release_btn {
     display: block;

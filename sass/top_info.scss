@@ -92,7 +92,7 @@ html body .currency_select {
   } @else {
     @extend %icon_pseudo;
     &:before {
-      content: $icon-triangle;
+      content: unicode($icon-triangle);
     }
   }
 }
