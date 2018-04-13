@@ -201,14 +201,15 @@ $(function ($) {
 
     initMask();
 
-    initFollowPopup();
-
-    initBonusPopup();
 });
 
 $(window)
     .on('load', function () {
         checkHeader();
+
+        initFollowPopup();
+
+        initBonusPopup();
     })
     .on('scroll', function () {
         var scrtop = getScrollTop(),
